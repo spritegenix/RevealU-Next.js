@@ -2,6 +2,7 @@ import React from 'react';
 import BlogsCard from './BlogsCard';
 import TestimonialCard from './TestimonialCard';
 import FounderCard from './FounderCard';
+import ServicesCard from '@/app/about/ServicesCard';
 const CardSelction = ({ cardType }) => {
   return (
     <>
@@ -14,7 +15,7 @@ const CardSelction = ({ cardType }) => {
       ) : cardType === 'founder' ? (
         <FounderCard />
       ) : (
-        ''
+        <ServicesCard />
       )}
     </>
   );

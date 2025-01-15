@@ -3,12 +3,14 @@ import ClientSlider from '@/components/ClientSlider';
 import Wrapper from '@/components/elements/Wrappers';
 import HomeCard from '@/components/HomeCard';
 import React from 'react';
-
-const ServiceSection = () => {
+interface ServiceSectionProps {
+  bgColor: string;
+}
+const ServiceSection: React.FC<ServiceSectionProps> = ({ bgColor }) => {
   return (
     <Wrapper
       containerClassName="mx-10 text-center   "
-      bgColor="bg-bg-blue/20"
+      bgColor={`${bgColor}`}
       className="py-20  space-y-10  "
       isTop={false}
     >

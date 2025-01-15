@@ -9,6 +9,7 @@ import { FaGear } from 'react-icons/fa6';
 import { LuMail } from 'react-icons/lu';
 import SkillBar from './Skill';
 import ChooseUsCard from './ChooseUsCard';
+import StickySection from '@/components/StickySection';
 
 const page = () => {
   const skills = [
@@ -20,7 +21,7 @@ const page = () => {
   return (
     <Layout headerStyle={2} footerStyle={1}>
       <Wrapper isTop={true} className="pt-10 md:pt-8 lg:pt-20 xl:pb-20">
-        <div className="w-full xl:w-10/12 mx-auto text-center bg-bg-blue/20 rounded-lg py-12 px-1 md:py-20 md:px-12">
+        <div className="w-full xl:w-8/12 mx-auto text-center bg-bg-blue/20 rounded-lg py-12 px-1 md:py-20 md:px-12">
           <p>
             {' '}
             HOME <span>{'>'}</span> <span className="bg-images">ABOUT</span>
@@ -55,7 +56,7 @@ const page = () => {
                 eiusmod diti tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <div className="flex flex-col md:flex-row pb-6 border-b-2 ">
-                <div className="flex-1 md:ml-7 space-y-4 mb-4">
+                <div className="flex-1 space-y-4 mb-4">
                   <p className="text-xl font-bold flex gap-3 items-center">
                     <span className="bg-bg-blue rounded-full p-2">
                       <FaCrosshairs size={20} />
@@ -107,7 +108,7 @@ const page = () => {
         <CounterSection />
       </Wrapper>
 
-      <Wrapper bgColor="bg-bg-blue/20">
+      <Wrapper bgColor="bg-bg-blue/20" containerClassName="py-10">
         <div className="xl:grid grid-cols-2 gap-x-5">
           <div>
             <div className=" top-32 xl:mt-12 xl:mr-20 flex flex-col p-2 space-y-4">
@@ -140,6 +141,39 @@ const page = () => {
             <ChooseUsCard />
           </div>
         </div>
+      </Wrapper>
+
+      <Wrapper containerClassName="py-10">
+        <StickySection
+          table1Order={'order-1'}
+          table2Order={'order-2'}
+          title="How Get Our Services"
+          heading="Four Steps to Your Success"
+          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod diti tempor incididunt labore."
+          buttonContent={'Contact Us'}
+          cardType={''} // blog , review or founder
+        />
+      </Wrapper>
+
+      <Wrapper
+        containerClassName="mx-10 text-center   "
+        bgColor="bg-bg-blue/20"
+        className="py-20  space-y-10  "
+        isTop={false}
+      >
+        <p className="text-lg font-semibold tracking-wider bg-images mx-auto">
+          Get In Touch
+        </p>
+        <h2 className="font-Manrope text-[42px] leading-none  md:text-6xl font-bold">
+          Start Living Your Ideal Life Today
+        </h2>
+        <p className="text-lg font-light w-full md:w-10/12 lg:w-1/2 md:px-3 mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna.
+        </p>
+        <Button variant="scale" size="md" className="mx-auto">
+          Start Consultation
+        </Button>
       </Wrapper>
     </Layout>
   );
