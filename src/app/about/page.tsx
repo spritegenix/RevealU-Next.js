@@ -4,10 +4,19 @@ import Wrapper from '@/components/elements/Wrappers';
 import Layout from '@/components/layout/Layout';
 import Image from 'next/image';
 import React from 'react';
-import { BsArrowRightShort } from 'react-icons/bs';
+import { FaCrosshairs } from 'react-icons/fa';
+import { FaGear } from 'react-icons/fa6';
 import { LuMail } from 'react-icons/lu';
+import SkillBar from './Skill';
+import ChooseUsCard from './ChooseUsCard';
 
 const page = () => {
+  const skills = [
+    { skill: 'HTML', percentage: 90 },
+    { skill: 'CSS', percentage: 80 },
+    { skill: 'JavaScript', percentage: 70 },
+    { skill: 'React', percentage: 85 },
+  ];
   return (
     <Layout headerStyle={2} footerStyle={1}>
       <Wrapper isTop={true} className="pt-10 md:pt-8 lg:pt-20 xl:pb-20">
@@ -21,18 +30,20 @@ const page = () => {
       </Wrapper>
 
       <Wrapper className="py-20 ">
-        <div className="flex justify-start flex-col xl:flex-row">
-          <div className="flex-1 order-2 xl:order-1 xl:w-10/12">
-            <Image
-              src={'/images/project-discussion.jpg'}
-              width={580}
-              height={650}
-              alt="project-discussion"
-              className="w-full h-auto rounded-lg"
-            />
+        <div className="flex justify-start flex-col xl:flex-row gap-5">
+          <div className="flex-1 order-2 xl:order-1 ">
+            <div className="xl:w-11/12">
+              <Image
+                src={'/images/project-discussion.jpg'}
+                width={400}
+                height={400}
+                alt="project-discussion"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
           </div>
-          <div className="flex-1  order-1 xl:order-2 xl:ml-[35px] mb-10 md:mb-[20px] xl:pt-5">
-            <div className="text-start space-y-5">
+          <div className="flex-1  order-1 xl:order-2 xl:ml-[35px] mb-10 md:mb-[20px] xl:pt-8">
+            <div className="text-start space-y-7">
               <p className="text-lg font-semibold tracking-wider bg-images  uppercase">
                 About Lifect
               </p>
@@ -43,42 +54,30 @@ const page = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod diti tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <div className="flex flex-col md:flex-row pb-6 border-b-2 space-y-6">
-                <div className="flex-1 h-56">
-                  <Image
-                    src={'/images/group-discussion.jpg'}
-                    width={580}
-                    height={650}
-                    alt="group-discussion"
-                    className="rounded-lg h-full object-cover aspect-video  object-top"
-                  />
+              <div className="flex flex-col md:flex-row pb-6 border-b-2 ">
+                <div className="flex-1 md:ml-7 space-y-4 mb-4">
+                  <p className="text-xl font-bold flex gap-3 items-center">
+                    <span className="bg-bg-blue rounded-full p-2">
+                      <FaCrosshairs size={20} />
+                    </span>
+                    Vision
+                  </p>
+                  <p className="font-Mukta font-light text-base md:text-xl leading-8 text-text-grey tracking-wide ">
+                    Duis aute irure dolor in reprehen derit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
                 </div>
+                <div className="flex-1 md:ml-7 space-y-4 mb-4">
+                  <p className="text-xl font-bold flex gap-3 items-center">
+                    <span className="bg-bg-blue rounded-full p-2">
+                      <FaGear size={20} />
+                    </span>
+                    Mission
+                  </p>
 
-                <div className="flex-1 md:ml-7 ">
-                  <h4 className="text-xl font-bold">Benefits Join Coaching</h4>
-                  <p className="font-Mukta font-light text-xl leading-8 text-text-grey tracking-wide mb-4">
+                  <p className="font-Mukta font-light text-base md:text-xl leading-8 text-text-grey tracking-wide mb-4">
                     Nam libero tempore, cum solutanis nobis est eligendi optio.
                   </p>
-                  <ul className="flex space-y-4 flex-col">
-                    <li className="flex">
-                      <div className="w-6 h-6 bg-bg-green rounded-full mr-4 flex justify-center items-center">
-                        <BsArrowRightShort color="#ffff" size={24} />
-                      </div>
-                      Get Networking
-                    </li>
-                    <li className="flex">
-                      <div className="w-6 h-6 bg-bg-green rounded-full mr-4 flex justify-center items-center">
-                        <BsArrowRightShort color="#ffff" size={24} />
-                      </div>
-                      Professional Coaching
-                    </li>
-                    <li className="flex">
-                      <div className="w-6 h-6 bg-bg-green rounded-full mr-4 flex justify-center items-center">
-                        <BsArrowRightShort color="#ffff" size={24} />
-                      </div>
-                      Positive Insight
-                    </li>
-                  </ul>
                 </div>
               </div>
               <div className="flex items-start xl:items-center md:gap-x-8 pt-5 flex-col md:flex-row space-y-5 md:space-y-0">
@@ -106,6 +105,41 @@ const page = () => {
           </div>
         </div>
         <CounterSection />
+      </Wrapper>
+
+      <Wrapper bgColor="bg-bg-blue/20">
+        <div className="xl:grid grid-cols-2 gap-x-5">
+          <div>
+            <div className=" top-32 xl:mt-12 xl:mr-20 flex flex-col p-2 space-y-4">
+              <h2 className="bg-images tracking-widest font-medium uppercase">
+                Why Choose Us
+              </h2>
+              <h2 className="text-4xl md:text-5xl font-bold">
+                Help Nourishing Your Whole Self
+              </h2>
+              <p className="text-lg font-semibold">
+                Unlock your life potential with us
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                utenim ad minim veniam.
+              </p>
+            </div>
+
+            <div className="p-4">
+              {skills.map(({ skill, percentage }, index) => (
+                <SkillBar key={index} skill={skill} percentage={percentage} />
+              ))}
+            </div>
+          </div>
+
+          <div className="flex flex-col mt-12 space-y-12">
+            <ChooseUsCard />
+            <ChooseUsCard />
+            <ChooseUsCard />
+          </div>
+        </div>
       </Wrapper>
     </Layout>
   );

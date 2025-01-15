@@ -19,7 +19,10 @@ export default {
         Manrope: ["Manrope", "sans-serif"],
         Mukta: ["Mukta", "sans-serif"],
       },
-      
+      transitionDuration: {
+        2000: '2000ms', // Adds duration-2000
+        3000: '3000ms', // Adds duration-3000
+      },
     },
   },
   plugins: [

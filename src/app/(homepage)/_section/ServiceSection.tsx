@@ -9,7 +9,7 @@ const ServiceSection = () => {
     <Wrapper
       containerClassName="mx-10 text-center   "
       bgColor="bg-bg-blue/20"
-      className="py-20  space-y-10 "
+      className="py-20  space-y-10  "
       isTop={false}
     >
       <p className="text-lg font-semibold tracking-wider bg-images mx-auto">

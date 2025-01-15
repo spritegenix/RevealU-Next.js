@@ -1,7 +1,6 @@
 import Wrapper from '@/components/elements/Wrappers';
 import Layout from '@/components/layout/Layout';
-import HomeCard from '@/components/HomeCard';
-import ClientSlider, { Data } from '@/components/ClientSlider';
+import { Data } from '@/components/ClientSlider';
 import CounterSection from '@/components/CounterSection';
 import StickySection from '@/components/StickySection';
 import HeroSection from '@/app/(homepage)/_section/HeroSection';
@@ -132,7 +131,7 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod diti tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <div className="flex flex-col md:flex-row pb-6 border-b-2 space-y-6">
+              <div className="flex flex-col md:flex-row pb-6 border-b-2 space-y-6 xl:space-y-0">
                 <div className="flex-1 h-56">
                   <Image
                     src={'/images/group-discussion.jpg'}
