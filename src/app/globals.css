@@ -2,20 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  font-family: 'manrope', Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.navbar-toggle-btn {
+  width: 32px;
+  height: 23px;
+  position: relative;
+  right: 0;
+  transition: 0.3s;
+  top: 0;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.navbar-toggle-btn span {
+  background: black;
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+
+.navbar-toggle-btn span:nth-child(1) {
+  top: 0;
+}
+
+.navbar-toggle-btn span:nth-child(2),
+.navbar-toggle-btn span:nth-child(3) {
+  top: 12px;
+}
+
+.navbar-toggle-btn span:nth-child(4) {
+  top: 24px;
+}
+
+.navbar-toggle-btn.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.navbar-toggle-btn.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.navbar-toggle-btn.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggle-btn.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.bg-images {
+  background-color: transparent;
+  width: fit-content;
+  background-image: linear-gradient(180deg, #ffffff00 55%, #cfff9c 0%);
 }
