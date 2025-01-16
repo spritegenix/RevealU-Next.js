@@ -66,7 +66,7 @@ export default function Footer1() {
           <h4 className="my-2 mb-3 text-xl font-semibold">Contact Us</h4>
           <div className="space-y-3">
             <p>
-              <Link href={`tel:${footer?.contactDetails?.contactNo}`}>
+              <Link href={`tel:9602264303`}>
                 {footer?.contactDetails?.contactNo}
               </Link>
             </p>

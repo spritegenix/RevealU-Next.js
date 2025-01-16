@@ -1,5 +1,5 @@
 import React from 'react';
-import { steps } from './Data';
+import { steps } from '../data';
 const ServicesCard = () => {
   return (
     <div className="flex flex-col gap-10">
@@ -12,7 +12,7 @@ const ServicesCard = () => {
               }`}
             >
               {index !== steps.length - 1 && (
-                <span className="absolute left-[45%] top-full h-52 md:h-32 xl:h-40 w-[2px] bg-gray-300"></span>
+                <span className="absolute left-[45%] top-full h-[195px] md:h-[130px] lg:h-[120px] xl:h-[140px] w-[2px] bg-gray-300"></span>
               )}
             </div>
           </div>

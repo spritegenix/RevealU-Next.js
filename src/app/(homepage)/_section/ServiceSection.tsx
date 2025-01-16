@@ -9,27 +9,28 @@ interface ServiceSectionProps {
 const ServiceSection: React.FC<ServiceSectionProps> = ({ bgColor }) => {
   return (
     <Wrapper
-      containerClassName="mx-10 text-center   "
+      containerClassName="mx-10 text-center"
       bgColor={`${bgColor}`}
-      className="py-20  space-y-10  "
+      className="py-20 space-y-10"
       isTop={false}
     >
       <p className="text-lg font-semibold tracking-wider bg-images mx-auto">
         OUR SERVICES
       </p>
-      <h2 className="font-Manrope text-[42px] leading-none  md:text-6xl font-bold">
-        Your Key to Unlocking Success
+      <h2 className="font-Manrope text-[42px] leading-none md:text-6xl font-bold">
+        Transform Your Life with Our Expertise
       </h2>
-      <p className="text-lg font-light w-full md:w-10/12 lg:w-1/2 md:px-3 mx-auto">
-        Sed ut perspiciatis unde omnis iste natus error sit amet voluptatem
-        accusantium doloremque laudantium elit.
+      <p className="text-lg font-light w-full md:w-10/12 lg:w-8/12 md:px-3 mx-auto">
+        Our services are designed to empower individuals to achieve personal and
+        professional success. From mindset coaching to career counseling, we
+        provide tailored strategies to unlock your true potential.
       </p>
       <HomeCard cardsData={cardsData} />
       <div className="border-b-2 border-gray-500"></div>
       <p className="text-lg font-light lg:w-1/2 md:px-3 mx-auto">
-        We&apos;ve worked with over{' '}
-        <span className="bg-images font-semibold">200K+</span> companies
-        globally
+        We&apos;ve empowered over{' '}
+        <span className="bg-images font-semibold">2000+</span> individuals and
+        companies globally to achieve their goals and unlock new opportunities.
       </p>
       <ClientSlider data={clients} sliderSpeed={30} reverseDirection={false} />
     </Wrapper>

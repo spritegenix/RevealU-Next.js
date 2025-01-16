@@ -6,6 +6,11 @@
   font-family: 'manrope', Helvetica, sans-serif;
 }
 
+p{
+  /* font-family: 'mukta'; */
+  font-size: 18px;
+  /* color:#556775 */
+}
 .navbar-toggle-btn {
   width: 32px;
   height: 23px;

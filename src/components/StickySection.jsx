@@ -2,6 +2,7 @@ import React from 'react';
 import Button from './elements/Button';
 import BlogsCard from '@/components/BlogsCard';
 import CardSelction from '@/components/CardSelction';
+import Link from 'next/link';
 const StickySection = ({
   table1Order,
   table2Order,
@@ -10,6 +11,8 @@ const StickySection = ({
   paragraph,
   buttonContent,
   cardType,
+  variant,
+  linkTo = '#',
 }) => {
   return (
     <div className="xl:grid grid-cols-2 gap-x-5">
@@ -20,7 +23,12 @@ const StickySection = ({
           </h2>
           <h2 className="text-4xl md:text-5xl font-bold">{heading}</h2>
           <p>{paragraph}</p>
-          <Button className="w-1/2 md:w-1/3" variant="scale">
+          <Button
+            as={Link}
+            href={linkTo}
+            className="w-1/2 md:w-1/3"
+            variant={`${variant}`}
+          >
             {buttonContent}
           </Button>
         </div>

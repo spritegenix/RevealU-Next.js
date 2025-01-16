@@ -20,15 +20,21 @@ const BlogsCard = () => {
               className="w-full h-full aspect-video object-cover object-top"
             />
           </div>
-          <div className="space-y-4 py-4 px-5 flex-1">
-            <Button variant="default">STRATEGY</Button>
-            <h2 className="text-lg font-bold">Take a Look Our Latest Blog</h2>
-            <p className=" bg-images flex gap-x-3 px-2 items-center">
+          <div className="py-4 px-5 flex-1">
+            <div className="space-y-4 ">
+              <div className="bg-black text-white px-4 py-2 gap-x-1 text-sm w-fit rounded-md">
+                STRATEGY
+              </div>
+              <h2 className="text-lg font-bold">
+                Mastering Time Management Strategies for Productivity
+              </h2>
+            </div>
+            <div className=" bg-images flex gap-x-3 px-2 items-center">
               <span>
                 <FaArrowRight />
               </span>
-              <span className="font-semibold"> Read More</span>
-            </p>
+              <p className="font-semibold ">Read More</p>
+            </div>
           </div>
         </div>
       ))}

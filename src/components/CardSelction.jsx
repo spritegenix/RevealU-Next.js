@@ -2,7 +2,7 @@ import React from 'react';
 import BlogsCard from './BlogsCard';
 import TestimonialCard from './TestimonialCard';
 import FounderCard from './FounderCard';
-import ServicesCard from '@/app/about/ServicesCard';
+import ServicesCard from '@/app/about/_section/ServicesCard';
 const CardSelction = ({ cardType }) => {
   return (
     <>

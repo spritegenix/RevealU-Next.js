@@ -10,6 +10,7 @@ import { FaMapLocation } from 'react-icons/fa6';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 import MenuMobile from '../MenuMobile';
+import Link from 'next/link';
 export default function Header2({
   show,
   handleMobileMenu,
@@ -29,19 +30,26 @@ export default function Header2({
           containerClassName="mx-10 w-full"
           className=" flex justify-between items-center pt-2"
         >
-          <div className="flex gap-3 items-center">
+          <a
+            className="flex gap-3 items-center"
+            href="https://maps.app.goo.gl/4J7nhZFEQVo95tdQ7"
+            target="_blank"
+          >
             <FaMapLocation />
-            <p>Jl. Raya Kuta Chartered No.70 Street, Denpasar</p>
-          </div>
+            <p>Jaipur Rajasthan 302004.</p>
+          </a>
           <div className="flex gap-x-5">
-            <div className="flex gap-3 items-center">
+            <a
+              className="flex gap-3 items-center"
+              href="mailto:info@reveal-you.in"
+            >
               <IoMdMail />
-              <p>contact@baliniz.com</p>
-            </div>
-            <div className="flex gap-3 items-center">
+              <p>info@reveal-you.in</p>
+            </a>
+            <a className="flex gap-1 items-center" href="tel:+919602264303">
               <FaPhoneAlt />
-              <p>(+62) 8896-2220</p>
-            </div>
+              <p>(+91) 9602264303</p>
+            </a>
           </div>
         </Wrapper>
       </div>
@@ -64,7 +72,9 @@ export default function Header2({
           {/* <AuthButton />
           {isLogin && <LogoutButton />} */}
         </div>
-        <Button variant="default">Make an Appointment</Button>
+        <Button as={Link} href="contact" variant="scale">
+          Make an Appointment
+        </Button>
       </Wrapper>
 
       {/* -------------------------------------  */}

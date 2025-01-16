@@ -7,38 +7,54 @@ import HeroSection from '@/app/(homepage)/_section/HeroSection';
 import Accordion1 from '@/components/elements/Accordions/Accordion1';
 import ServiceSection from './(homepage)/_section/ServiceSection';
 import AboutSection from './(homepage)/_section/AboutSection';
+import {
+  FaUserAlt,
+  FaAngry,
+  FaCrown,
+  FaBrain,
+  FaChalkboardTeacher,
+  FaRegSmileBeam,
+} from 'react-icons/fa';
+
 export const cardsData = [
   {
     title: 'Personal Growth',
     description:
-      'At vero eos et accusamus et iustomen odio dignissimos ducimus quised blanditis praesentium.',
+      'Unlock your potential and transform your life with personalized guidance for success in all areas.',
+    icon: <FaUserAlt size={24} />,
   },
   {
     title: 'Anger Management',
     description:
-      'At vero eos et accusamus et iustomen odio dignissimos ducimus quised blanditis praesentium.',
+      'Learn techniques to control anger, reduce stress, and build emotional resilience effectively.',
+    icon: <FaAngry size={24} />,
   },
   {
     title: 'Leadership Skills',
     description:
-      'At vero eos et accusamus et iustomen odio dignissimos ducimus quised blanditis praesentium.',
+      'Develop leadership qualities like communication, emotional intelligence, and problem-solving.',
+    icon: <FaCrown size={24} />,
   },
   {
     title: 'Memory & Attention',
     description:
-      'At vero eos et accusamus et iustomen odio dignissimos ducimus quised blanditis praesentium.',
+      'Boost focus, memory, and cognitive skills with proven techniques for mental clarity.',
+    icon: <FaBrain size={24} />,
   },
   {
     title: 'Private Coaching',
     description:
-      'At vero eos et accusamus et iustomen odio dignissimos ducimus quised blanditis praesentium.',
+      'Experience personalized coaching tailored to your unique strengths and growth areas.',
+    icon: <FaChalkboardTeacher size={24} />,
   },
   {
     title: 'Mindfulness Training',
     description:
-      'At vero eos et accusamus et iustomen odio dignissimos ducimus quised blanditis praesentium.',
+      'Adopt mindfulness techniques to build resilience, positivity, and a balanced mindset.',
+    icon: <FaRegSmileBeam size={24} />,
   },
 ];
+
 export const clients: Data[] = [
   {
     text: 'Rolls Royce',
@@ -70,32 +86,32 @@ export const faqData = [
   {
     question: 'What qualifications do life coaches typically have?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Life coaches often hold certifications in areas like Neuro-Linguistic Programming (NLP), Genetic Brain Profiling, and Mindfulness Coaching. Dr. Yogita Sharma, for instance, is certified in Fingerprint Analysis, POCSO training, and soft skills coaching.',
   },
   {
     question: 'What should I expect during a life coaching session?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'A life coaching session involves understanding your goals, analyzing strengths through tools like Fingerprint Analysis, and creating a personalized action plan to overcome challenges and achieve success.',
   },
   {
     question: 'How much does life coaching cost?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'The cost of life coaching varies depending on the type of session and duration. Contact us directly for customized plans that suit your goals and budget.',
   },
   {
     question: 'How do I find a qualified life coach?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Look for coaches with certifications in relevant fields, a proven track record, and techniques that align with your goals. At “Reveal You,” we provide expert guidance tailored to individual needs.',
   },
   {
     question: 'How does life coaching differ from therapy?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'While therapy focuses on healing past wounds, life coaching emphasizes setting and achieving future goals. It’s about building strategies to unlock your potential and create a fulfilling life.',
   },
   {
     question: 'What kinds of issues can a life coach help with?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Life coaches help with career decisions, personal growth, academic challenges, parenting strategies, and building a positive mindset. Our holistic approach empowers individuals to overcome obstacles and thrive.',
   },
 ];
 
@@ -141,10 +157,11 @@ export default function Home() {
           table1Order={'order-1'}
           table2Order={'order-2'}
           title="LATEST BLOG"
-          heading="Take a Look Our Latest Blog"
-          paragraph=" Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                      eiusmod diti tempor incididunt labore."
-          buttonContent={' View All Blogs'}
+          heading="Explore Our Insights and Expertise"
+          paragraph="Discover valuable tips, strategies, and expert insights on personal growth, mindfulness, career planning, and more in our latest blog posts."
+          buttonContent={'View All Blogs'}
+          variant={'scale'}
+          linkTo="blogs"
           cardType={'blog'} // blog , review or founder
         />
       </Wrapper>
@@ -154,10 +171,11 @@ export default function Home() {
           table1Order={'order-2'}
           table2Order={'order-1'}
           title="TESTIMONIALS"
-          heading="Positive Review From Our Customers"
-          paragraph="Sed ut perspiciatis unde omnis iste natus error sit amet voluptatem accusantium doloremque laudantium elit."
-          buttonContent={'Write your review'}
+          heading="What Our Clients Say About Us"
+          paragraph="Hear from our satisfied clients who have experienced personal growth, career clarity, and positive transformations through our coaching and guidance."
+          buttonContent={''}
           cardType={'review'}
+          variant={'none'}
         />
       </Wrapper>
 

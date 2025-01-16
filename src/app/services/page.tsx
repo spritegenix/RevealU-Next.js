@@ -18,27 +18,29 @@ const page = () => {
         </div>
       </Wrapper>
       <ServiceSection bgColor="bg-transparent" />
-      <Wrapper containerClassName="py-10" bgColor="bg-bg-blue/20">
+      <Wrapper containerClassName="py-10 " bgColor="bg-bg-blue/20">
         <StickySection
           table1Order={'order-1'}
           table2Order={'order-2'}
-          title="How Get Our Services"
-          heading="Four Steps to Your Success"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod diti tempor incididunt labore."
+          title="How to Get Started"
+          heading="Four Steps to Unlock Your Potential"
+          paragraph="Achieve your personal and professional goals with our guided coaching process. Start your journey towards growth and success in just four simple steps."
           buttonContent={'Contact Us'}
-          cardType={''} // blog , review or founder
+          variant={'scale'}
+          linkTo="contact"
+          cardType={''} // blog, review, or founder
         />
       </Wrapper>
       <Wrapper containerClassName="py-10">
         <StickySection
           table1Order={'order-2'}
           table2Order={'order-1'}
-          title="LATEST BLOG"
-          heading="Take a Look Our Latest Blog"
-          paragraph=" Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                      eiusmod diti tempor incididunt labore."
-          buttonContent={' View All Blogs'}
-          cardType={'review'} // blog , review or founder
+          title="TESTIMONIALS"
+          heading="What Our Clients Say About Us"
+          paragraph="Hear from our satisfied clients who have experienced personal growth, career clarity, and positive transformations through our coaching and guidance."
+          buttonContent={''}
+          cardType={'review'}
+          variant={'none'}
         />
       </Wrapper>
     </Layout>

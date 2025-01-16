@@ -57,15 +57,30 @@ const Counter = ({ targetNumber, duration = 2000, children }) => {
 
 const CounterSection = () => {
   const counters = [
-    { targetNumber: 1500, duration: 3000, label: 'Happy Clients', suffix: '+' },
     {
-      targetNumber: 2500,
+      targetNumber: 2000,
       duration: 3000,
-      label: 'Projects Completed',
-      suffix: '%',
+      label: 'Satisfied Clients',
+      suffix: '+',
     },
-    { targetNumber: 500, duration: 3000, label: 'Awards Won', suffix: '+' },
-    { targetNumber: 500, duration: 3000, label: 'Revenue', suffix: 'k' },
+    {
+      targetNumber: 300,
+      duration: 3000,
+      label: 'Successful Coaching Sessions',
+      suffix: '+',
+    },
+    {
+      targetNumber: 100,
+      duration: 3000,
+      label: 'Workshops Conducted',
+      suffix: '+',
+    },
+    {
+      targetNumber: 1000,
+      duration: 3000,
+      label: 'Lives Transformed',
+      suffix: '+',
+    },
   ];
 
   return (

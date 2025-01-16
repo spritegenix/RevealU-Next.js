@@ -37,6 +37,8 @@ export default function Button({
         return 'bg-white text-black hover:bg-gray-100/80 border border-gray-300';
       case 'scale':
         return 'px-7 py-5 text-white bg-black text-lg font-bold hover:bg-bg-green hover:scale-95 hover:fade-in-15 transition-all hover:-translate-y-3  hover:shadow-md hover:text-black';
+      case 'none':
+        return;
       default:
         return 'bg-black text-white';
     }
