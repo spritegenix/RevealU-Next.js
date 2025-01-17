@@ -1,7 +1,5 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Search from './Search';
-import Sidebar from './Sidebar';
 import Footer1 from './footer/Footer1';
 import Header1 from './header/Header1/Header1';
 import ScrollToTopButton from '../elements/ScrollToTopButton';
@@ -26,10 +24,6 @@ export default function Layout({
 
   const pathname = usePathname();
   const router = useRouter();
-
-  const [isSidebar, setSidebar] = useState(false);
-
-  const [isSearchModal, setIsSearchModal] = useState<Boolean>(false);
 
   const controlNavbar = () => {
     if (typeof window !== 'undefined') {
@@ -96,8 +90,8 @@ export default function Layout({
           lowerNavItems={lowerNavItems}
           activeItemId={activeItemId}
           handleNavItemClick={handleNavItemClick}
-          handleSearchModal={() => setIsSearchModal((pre) => !pre)}
-          handleSidebar={() => setSidebar((pre) => !pre)}
+          // handleSearchModal={() => setIsSearchModal((pre) => !pre)}
+          // handleSidebar={() => setSidebar((pre) => !pre)}
           handleLogout={() => {}}
         />
       )}
@@ -110,8 +104,8 @@ export default function Layout({
           lowerNavItems={lowerNavItems}
           activeItemId={activeItemId}
           handleNavItemClick={handleNavItemClick}
-          handleSearchModal={() => setIsSearchModal((pre) => !pre)}
-          handleSidebar={() => setSidebar((pre) => !pre)}
+          // handleSearchModal={() => setIsSearchModal((pre) => !pre)}
+          // handleSidebar={() => setSidebar((pre) => !pre)}
           handleLogout={() => {}}
         />
       )}

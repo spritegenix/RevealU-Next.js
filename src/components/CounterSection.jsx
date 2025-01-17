@@ -66,7 +66,7 @@ const CounterSection = () => {
     {
       targetNumber: 300,
       duration: 3000,
-      label: 'Successful Coaching Sessions',
+      label: 'Coaching Sessions',
       suffix: '+',
     },
     {

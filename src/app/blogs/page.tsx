@@ -15,7 +15,7 @@ const page = () => {
           <h1 className="font-bold text-7xl">Blogs</h1>
         </div>
       </Wrapper>
-      <Wrapper>
+      <Wrapper className="py-10">
         <div className="space-y-10">
           <div className="flex justify-center items-center text-center">
             <div className=" top-32 xl:mt-12 flex flex-col p-2 space-y-4 text-center justify-center items-center">
@@ -23,11 +23,12 @@ const page = () => {
                 Latest Blog
               </h2>
               <h2 className="text-4xl md:text-5xl font-bold">
-                Take a Look Our Latest Blog
+                Explore Our Insights and Expertise
               </h2>
               <p className="font-Mukta text-text-grey text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit amet
-                voluptatem accusantium doloremque laudantium elit.
+                Discover valuable tips, strategies, and expert insights on
+                personal growth, mindfulness, career planning, and more in our
+                latest blog posts.
               </p>
             </div>
           </div>

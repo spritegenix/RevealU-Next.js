@@ -11,6 +11,7 @@ import SkillBar from './_section/Skill';
 import ChooseUsCard from './_section/ChooseUsCard';
 import StickySection from '@/components/StickySection';
 import { skills } from './data';
+import Link from 'next/link';
 const page = () => {
   return (
     <Layout headerStyle={2} footerStyle={1}>
@@ -27,9 +28,9 @@ const page = () => {
       <Wrapper className="py-20 ">
         <div className="flex justify-start flex-col xl:flex-row gap-5">
           <div className="flex-1 order-2 xl:order-1">
-            <div className="xl:w-11/12">
+            <div className=" lg:h-[650px] xl:w-11/12">
               <Image
-                src={'/images/project-discussion.jpg'}
+                src={'/images/about-1.jpeg'}
                 width={400}
                 height={400}
                 alt="project-discussion"
@@ -79,12 +80,12 @@ const page = () => {
                 </div>
               </div>
               <div className="flex items-start xl:items-center md:gap-x-8 pt-5 flex-col md:flex-row space-y-5 md:space-y-0">
-                <Button
+                {/* <Button
                   variant="scale"
                   className="w-1/2 md:w-1/3 h-1/2 text-lg font-bold hover:scale-95 hover:fade-in-15 transition-all hover:-translate-y-3"
                 >
                   <p className="text-white text-lg">Read More</p>
-                </Button>
+                </Button> */}
                 <div className="flex gap-x-5 md:justify-center items-center">
                   <div className="bg-bg-green rounded-full h-14 w-14 flex justify-center items-center">
                     <LuMail size={35} color="#ffff" />
@@ -182,7 +183,13 @@ const page = () => {
           Take the first step toward unlocking your potential with expert
           coaching tailored to your needs. Begin transforming your life today!
         </p>
-        <Button variant="scale" size="md" className="mx-auto">
+        <Button
+          as={Link}
+          href="contact"
+          variant="scale"
+          size="md"
+          className="mx-auto md:w-3/12"
+        >
           Start Consultation
         </Button>
       </Wrapper>

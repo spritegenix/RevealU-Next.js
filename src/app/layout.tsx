@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Manrope, Mukta } from 'next/font/google';
+import { Manrope, Mukta } from 'next/font/google';
 import './globals.css';
 
 const mukta = Mukta({
@@ -25,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${manrope.className} ${mukta.className} antialiased`}>
         {children}
+        <div id="portal"></div>
       </body>
     </html>
   );

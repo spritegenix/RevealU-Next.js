@@ -21,13 +21,14 @@ export default function SkillBar({ skill, percentage }: Skills) {
       { threshold: 0.3 } // Trigger when 30% of the bar is visible
     );
 
-    if (barRef.current) {
-      observer.observe(barRef.current);
+    const currentBarRef = barRef.current; // Save barRef.current to a variable
+    if (currentBarRef) {
+      observer.observe(currentBarRef);
     }
 
     return () => {
-      if (barRef.current) {
-        observer.unobserve(barRef.current);
+      if (currentBarRef) {
+        observer.unobserve(currentBarRef);
       }
     };
   }, []);

@@ -1,3 +1,7 @@
+
+import { Data } from '@/components/ClientSlider';
+
+
 export const people = [
     {
       id: 1,
@@ -40,5 +44,68 @@ export const people = [
       designation: 'The Explorer',
       image:
         'https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80',
+    },
+  ];
+
+  
+  
+  export const clients: Data[] = [
+    {
+      text: 'Empowering Mindset Transformation',
+      image: '/images/angryMen.png',
+      href: '/',
+      type: 'text',
+    },
+    {
+      text: 'Personalized Coaching for Success',
+      image: '/images/angryMen.png',
+      href: '/',
+      type: 'text',
+    },
+    {
+      text: 'Innovative Fingerprint Analysis',
+      image: '/images/angryMen.png',
+      href: '/',
+      type: 'text',
+    },
+    {
+      text: 'Comprehensive Growth Strategies',
+      image: '/images/angryMen.png',
+      href: '/',
+      type: 'text',
+    },
+  ];
+  
+  
+  export const faqData = [
+    {
+      question: 'What qualifications do life coaches typically have?',
+      answer:
+        'Life coaches often hold certifications in areas like Neuro-Linguistic Programming (NLP), Genetic Brain Profiling, and Mindfulness Coaching. Dr. Yogita Sharma, for instance, is certified in Fingerprint Analysis, POCSO training, and soft skills coaching.',
+    },
+    {
+      question: 'What should I expect during a life coaching session?',
+      answer:
+        'A life coaching session involves understanding your goals, analyzing strengths through tools like Fingerprint Analysis, and creating a personalized action plan to overcome challenges and achieve success.',
+    },
+    {
+      question: 'How much does life coaching cost?',
+      answer:
+        'The cost of life coaching varies depending on the type of session and duration. Contact us directly for customized plans that suit your goals and budget.',
+    },
+    {
+      question: 'How do I find a qualified life coach?',
+      answer:
+        'Look for coaches with certifications in relevant fields, a proven track record, and techniques that align with your goals. At “Reveal You,” we provide expert guidance tailored to individual needs.',
+    },
+    {
+      question: 'How does life coaching differ from therapy?',
+      answer:
+        'While therapy focuses on healing past wounds, life coaching emphasizes setting and achieving future goals. It’s about building strategies to unlock your potential and create a fulfilling life.',
+    },
+    {
+      question: 'What kinds of issues can a life coach help with?',
+      answer:
+        'Life coaches help with career decisions, personal growth, academic challenges, parenting strategies, and building a positive mindset. Our holistic approach empowers individuals to overcome obstacles and thrive.',
     },
   ];

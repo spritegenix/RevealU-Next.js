@@ -15,7 +15,7 @@ const ClientSlider = ({
   reverseDirection = false,
   repeatCount = 5,
   outerContainerClass = 'overflow-hidden relative  max-w-screen w-full md:-left-3  py-10 origin-center  z-0 top-0  rotate-0',
-  innerContainerClass = 'w-32 h-32 flex-shrink-0 flex items-center justify-center md:mx-10 ',
+  innerContainerClass = 'w-32 h-32 flex-shrink-0 flex items-center justify-center md:mx-28 ',
   textStyle = 'text-center text-3xl font-semibold hover:text-yellow-500 text-gray-700 transition-all duration-300',
   imageStyle = 'object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300',
   combinedImageStyle = 'object-cover w-full h-full ',
@@ -45,7 +45,7 @@ const ClientSlider = ({
         <div className=" w-full relative ">
           {/* Slider Container */}
           <div
-            className={`flex gap-6`}
+            className={`flex`}
             style={{
               animation: `${
                 reverseDirection ? 'reverse' : 'normal'

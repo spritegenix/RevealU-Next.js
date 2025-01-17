@@ -1,10 +1,15 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  // distDir: "_next",
+  reactStrictMode: false,
   images: {
-    domains: ['images.unsplash.com'],
-  }
+    unoptimized: true,
+  },
+  rules: {
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+  },
 };
 
 export default nextConfig;

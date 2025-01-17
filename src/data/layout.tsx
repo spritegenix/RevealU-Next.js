@@ -1,8 +1,3 @@
-import { FaPhoneAlt } from 'react-icons/fa';
-import { GoCodeReview } from 'react-icons/go';
-import { LiaBullhornSolid } from 'react-icons/lia';
-import { MdOutlineAutoGraph } from 'react-icons/md';
-
 export const header = {
   upperNav: [
     {
@@ -206,6 +201,14 @@ export const header2 = {
       subNav: [],
     },
     {
+      id: 6,
+      icon: '',
+      label: 'Gallery',
+      href: '/gallery',
+      iconStyle: '',
+      subNav: [],
+    },
+    {
       id: 5,
       icon: '',
       label: 'Contact',
@@ -223,13 +226,16 @@ export const footer = {
     location: 'Jaipur, Rajasthan 302004',
   },
   socials: {
-    facebook: 'https://www.facebook.com/RevealYou',
+    facebook: 'https://www.facebook.com/share/18g5RL1pWz/',
     twitter: 'https://twitter.com/RevealYou',
-    instagram: 'https://www.instagram.com/RevealYou/',
-    linkedin: 'https://www.linkedin.com/company/RevealYou/',
-    youtube: 'https://www.youtube.com/c/RevealYou',
+    whatsapp: 'https://whatsapp.com/channel/0029Va5gOSFDZ4LZsMfj1w3Y',
+    instagram:
+      'https://www.instagram.com/dr.yogita_sharma/profilecard/?igsh=MWc0NXU3bzB4ZnMyeA%3D%3D',
+    linkedin:
+      'https://www.linkedin.com/in/dr-yogita-sharma-c-25011a1a1/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    youtube: 'https://youtube.com/@dr.yogitasharma6346?si=ybAuVs1f-UNgSey7',
   },
-  copyrightText: 'Copyrights © 2024 Reveal You. All rights reserved.',
+  copyrightText: 'Copyrights © 2024 RevealU. All rights reserved.',
   list1: {
     title: 'Quick Links',
     links: [

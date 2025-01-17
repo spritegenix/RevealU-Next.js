@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaFacebook, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebook, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaXTwitter } from 'react-icons/fa6';
 import { TbBrandYoutubeFilled } from 'react-icons/tb';
@@ -126,9 +126,9 @@ export default function Footer1() {
               />
             )}
             {footer?.socials?.twitter && (
-              <FaXTwitter
+              <FaWhatsapp
                 className="social-icon text-xl"
-                onClick={() => window.open(footer?.socials?.twitter, '_blank')}
+                onClick={() => window.open(footer?.socials?.whatsapp, '_blank')}
               />
             )}
           </div>

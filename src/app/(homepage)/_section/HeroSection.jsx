@@ -4,6 +4,7 @@ import Wrapper from '@/components/elements/Wrappers';
 import Image from 'next/image';
 import ReviewsCircle from '@/components/ReviewsCircle';
 import Link from 'next/link';
+import { GoTriangleRight } from 'react-icons/go';
 const HeroSection = () => {
   return (
     <Wrapper
@@ -22,11 +23,11 @@ const HeroSection = () => {
       <div className="flex flex-col xl:flex-row pt-10 lg:pt-16">
         <div className="mt-5 pt-5 w-full md:w-8/12 lg:w-1/2 flex mx-auto justify-center items-center bg-gradient-to-t xl:w-auto from-bg-green/40 to-white rounded-lg order-2 xl:order-1">
           <Image
-            src="/images/angryMen.png"
+            src="/images/yogita.webp"
             width={600}
             height={430}
             alt="man"
-            className="xl:h-[500px] w-full h-auto object-cover"
+            className="xl:h-[550px] w-full h-auto object-cover rounded-lg"
           />
         </div>
         <div className="flex flex-col flex-1 xl:pl-14 content-center items-start justify-between lg:py-10 order-1 xl:order-2">
@@ -49,8 +50,14 @@ const HeroSection = () => {
               <Button className="" as={Link} href="services" variant="scale">
                 Get Started
               </Button>
-              <Button className="px-7 py-5 !text-black text-lg font-bold hover:scale-95 hover:fade-in-15 transition-all hover:-translate-y-3">
-                <p className="bg-images">Watch Video</p>
+              <Button
+                as={Link}
+                href="https://youtube.com/@dr.yogitasharma6346?si=ybAuVs1f-UNgSey7"
+                className="px-7 py-5 !text-black text-lg font-bold hover:scale-95 hover:fade-in-15 transition-all hover:-translate-y-3"
+              >
+                <p className="bg-images flex items-center">
+                  <GoTriangleRight size={30} /> Watch Video
+                </p>
               </Button>
             </div>
           </div>
@@ -58,7 +65,7 @@ const HeroSection = () => {
           <div className="py-5 pt-12 mt-5 border-t-2 border-gray-500 flex flex-col md:flex-row gap-10 md:gap-16 w-full">
             <ReviewsCircle />
             <div>
-              <p className="text-yellow-500"> ★★★★★</p>
+              <p className="text-yellow-500">★★★★★</p>
               Total Reviews <span className="font-semibold">(4.8 of 5)</span>
             </div>
           </div>

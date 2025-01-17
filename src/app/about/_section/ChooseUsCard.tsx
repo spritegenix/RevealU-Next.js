@@ -1,4 +1,3 @@
-import { IconCardProps } from '@/components/IconCard';
 import React from 'react';
 
 const ChooseUsCard = ({
@@ -8,7 +7,7 @@ const ChooseUsCard = ({
 }: {
   title: string;
   description: string;
-  icons: IconCardProps;
+  icons: React.ReactNode;
 }) => {
   return (
     <div className="flex bg-white gap-5 rounded-lg border-2 border-gray-500 p-7 shadow-lg hover:-translate-y-4 transition-all duration-300">

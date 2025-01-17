@@ -11,13 +11,13 @@ const AboutSection = () => {
   return (
     <Wrapper className="py-20 ">
       <div className="flex justify-start flex-col xl:flex-row">
-        <div className="flex-1 order-2 xl:order-1 xl:w-10/12">
+        <div className="flex-1 order-2 h-[800px] xl:order-1 xl:w-10/12">
           <Image
-            src={'/images/project-discussion.jpg'}
+            src={'/images/about-1.jpeg'}
             width={580}
             height={650}
             alt="project-discussion"
-            className="w-full h-auto rounded-lg"
+            className="w-full h-full rounded-lg object-cover"
           />
         </div>
         <div className="flex-1 order-1 xl:order-2 xl:ml-[35px] mb-10 md:mb-[20px] xl:pt-5">
@@ -34,8 +34,8 @@ const AboutSection = () => {
               proven techniques like Fingerprint Analysis, Mindfulness, and
               Genetic Brain Profiling.
             </p>
-            <div className="flex flex-col md:flex-row pb-6 border-b-2 space-y-6 xl:space-y-0">
-              <div className="flex-1 h-56">
+            <div className="flex flex-col justify-center items-center md:flex-row pb-6 border-b-2 space-y-6 xl:space-y-0">
+              <div className="flex-1 h-60">
                 <Image
                   src={'/images/group-discussion.jpg'}
                   width={580}

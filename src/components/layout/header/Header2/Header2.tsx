@@ -2,7 +2,6 @@
 import Wrapper from '@/components/elements/Wrappers';
 import Logo from '@/components/elements/Logo';
 import Menu from '../Menu';
-import AuthButton from './AuthButton';
 import Button from '@/components/elements/Button';
 // import useAuthStore from '@/zustandStore/authStore';
 import { useRouter } from 'next/navigation';
@@ -72,7 +71,12 @@ export default function Header2({
           {/* <AuthButton />
           {isLogin && <LogoutButton />} */}
         </div>
-        <Button as={Link} href="contact" variant="scale">
+        <Button
+          as={Link}
+          href="https://revealyoubydryogitasharma.zohobookings.in/#/revealyoubydryogitasharma"
+          target="_blank"
+          variant="scale"
+        >
           Make an Appointment
         </Button>
       </Wrapper>
@@ -125,17 +129,17 @@ function HamIcon({ isMobileMenuOpen, handleMobileMenu }: any) {
   );
 }
 
-function LogoutButton() {
-  const router = useRouter();
-  const { clearFirmTokens } = useAuthStore();
-  return (
-    <Button
-      onClick={() => {
-        clearFirmTokens();
-        router.push('/listing-login');
-      }}
-    >
-      Logout
-    </Button>
-  );
-}
+// function LogoutButton() {
+//   const router = useRouter();
+//   const { clearFirmTokens } = useAuthStore();
+//   return (
+//     <Button
+//       onClick={() => {
+//         clearFirmTokens();
+//         router.push('/listing-login');
+//       }}
+//     >
+//       Logout
+//     </Button>
+//   );
+// }
