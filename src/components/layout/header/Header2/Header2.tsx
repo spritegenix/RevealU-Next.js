@@ -27,7 +27,7 @@ export default function Header2({
       <div className="hidden bg-bg-lapiz h-11 lg:flex">
         <Wrapper
           containerClassName="mx-10 w-full"
-          className=" flex justify-between items-center pt-2"
+          className=" flex justify-between items-center pt-2  text-white"
         >
           <a
             className="flex gap-3 items-center"
@@ -35,7 +35,7 @@ export default function Header2({
             target="_blank"
           >
             <FaMapLocation />
-            <p>Jaipur Rajasthan 302004.</p>
+            <p className="text-white">Jaipur Rajasthan 302004.</p>
           </a>
           <div className="flex gap-x-5">
             <a
@@ -43,11 +43,11 @@ export default function Header2({
               href="mailto:info@reveal-you.in"
             >
               <IoMdMail />
-              <p>info@reveal-you.in</p>
+              <p className="text-white">info@reveal-you.in</p>
             </a>
             <a className="flex gap-1 items-center" href="tel:+919602264303">
-              <FaPhoneAlt />
-              <p>(+91) 9602264303</p>
+              <FaPhoneAlt className="text-white" />
+              <p className="text-white">(+91) 9602264303</p>
             </a>
           </div>
         </Wrapper>

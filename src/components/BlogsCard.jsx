@@ -23,9 +23,14 @@ const BlogsCard = () => {
           </div>
           <div className="py-4 px-5 flex-1 flex flex-col justify-around">
             <div className="space-y-4 ">
-              <div className="bg-black text-white px-4 py-2 gap-x-1 text-sm w-fit rounded-md">
-                STRATEGY
+              <div className="flex gap-3">
+                {blog.tags.slice(0, 2).map((tag) => (
+                  <div className="bg-black text-white px-4 py-2 gap-x-1 text-sm w-fit rounded-md">
+                    {tag}{' '}
+                  </div>
+                ))}
               </div>
+
               <h2 className="text-lg font-bold">{blog.title}</h2>
             </div>
             <Link

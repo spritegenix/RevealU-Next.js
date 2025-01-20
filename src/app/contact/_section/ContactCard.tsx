@@ -8,6 +8,7 @@ const ContactCard = () => {
       <h6 className="font-semibold text-xl">Let us know how we can help</h6>
       <form
         className="space-y-10 mt-10"
+        id="contact-form"
         action="mail.php"
         method="POST"
         encType="multipart/form-data"
@@ -77,6 +78,7 @@ const ContactCard = () => {
             <Mail className="inline-block mr-2" /> Send Message
           </Button>
         </div>
+        <div className="ajax-response"></div>
       </form>
     </div>
   );

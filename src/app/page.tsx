@@ -15,6 +15,7 @@ import {
   FaChalkboardTeacher,
   FaRegSmileBeam,
 } from 'react-icons/fa';
+import CounterSection from '@/components/CounterSection';
 export const cardsData = [
   {
     title: 'Personal Growth',
@@ -59,6 +60,10 @@ export default function Home() {
       <HeroSection />
       <ServiceSection bgColor="bg-bg-blue/20" />
       <AboutSection />
+      <Wrapper containerClassName="pb-10">
+        <CounterSection />
+      </Wrapper>
+
       {/* <Wrapper
         bgColor="bg-bg-blue/20 "
         containerClassName="mx-10 text-center "
@@ -104,7 +109,7 @@ export default function Home() {
         />
       </Wrapper>
 
-      <Wrapper containerClassName="py-10">
+      <Wrapper containerClassName="py-10" className="pb-20">
         <StickySection
           table1Order={'order-2'}
           table2Order={'order-1'}

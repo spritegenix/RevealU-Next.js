@@ -1,11 +1,13 @@
 'use client';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, memo } from 'react';
 
-const Counter = ({ targetNumber, duration = 2000, children }) => {
+// Counter Component
+const Counter = memo(({ targetNumber, duration = 2000, children }) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
+  // Intersection Observer to detect visibility
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -27,6 +29,7 @@ const Counter = ({ targetNumber, duration = 2000, children }) => {
     };
   }, []);
 
+  // Increment count when visible
   useEffect(() => {
     if (!isVisible) return;
 
@@ -53,8 +56,9 @@ const Counter = ({ targetNumber, duration = 2000, children }) => {
       {children}
     </div>
   );
-};
+});
 
+// CounterSection Component
 const CounterSection = () => {
   const counters = [
     {
@@ -84,19 +88,19 @@ const CounterSection = () => {
   ];
 
   return (
-    <section className=" pt-10 lg:pt-20 ">
-      <div className="container mx-auto text-center ">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 ">
+    <section className="pt-10 lg:pt-20">
+      <div className="container mx-auto text-center">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {counters.map((counter, index) => (
             <div
               key={index}
-              className="border-r-2 border-gray-500 even:border-r-0 lg:even:border-r-2 lg:last:border-none   "
+              className="border-r-2 border-gray-500 even:border-r-0 lg:even:border-r-2 lg:last:border-none"
             >
               <Counter
                 targetNumber={counter.targetNumber}
                 duration={counter.duration}
               >
-                <span className="text-3xl pl-1 text-gray-500 font-bold ">
+                <span className="text-3xl pl-1 text-gray-500 font-bold">
                   {counter.suffix}
                 </span>
               </Counter>

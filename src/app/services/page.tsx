@@ -31,7 +31,7 @@ const page = () => {
           cardType={''} // blog, review, or founder
         />
       </Wrapper>
-      <Wrapper containerClassName="py-10">
+      <Wrapper containerClassName="py-10" className="md:pb-20">
         <StickySection
           table1Order={'order-2'}
           table2Order={'order-1'}

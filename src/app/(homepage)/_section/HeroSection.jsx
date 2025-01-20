@@ -47,7 +47,7 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="flex">
-              <Button className="" as={Link} href="services" variant="scale">
+              <Button className="" as={Link} href="about" variant="scale">
                 Get Started
               </Button>
               <Button

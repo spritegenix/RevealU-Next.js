@@ -5,6 +5,13 @@ export const blogs = [
   {
     link: '/blogs/unleashing-your-true-potential-with-mindset-coaching',
     title: 'Unleashing Your True Potential with Mindset Coaching',
+    tags: [
+      'Mindset Coaching',
+      'Personal Growth',
+      'Self-Improvement',
+      'Emotional Resilience',
+      'Goal Setting',
+    ],
     content: (
       <>
         <p>
@@ -76,6 +83,13 @@ export const blogs = [
   {
     title: 'The Science Behind Fingerprint Analysis and How It Can Help You',
     link: '/blogs/the-science-behind-fingerprint-analysis-and-how-it-can-help-you',
+    tags: [
+      'Fingerprint Analysis',
+      'Self-Discovery',
+      'Career Alignment',
+      'Learning Styles',
+      'Personal Growth',
+    ],
     content: (
       <>
         <p>
@@ -147,6 +161,13 @@ export const blogs = [
   {
     link: '/blogs/parenting-in-the-modern-world-a-guide-to-understanding-your-child',
     title: 'Parenting in the Modern World: A Guide to Understanding Your Child',
+    tags: [
+      'Parenting Tips',
+      'Child Development',
+      'Mindful Parenting',
+      'Effective Communication',
+      'Family Bonding',
+    ],
     content: (
       <>
         <p>
@@ -211,6 +232,13 @@ export const blogs = [
   {
     link: '/blogs/building-resilience-overcoming-stress-with-mindfulness',
     title: 'Building Resilience: Overcoming Stress with Mindfulness',
+    tags: [
+      'Mindfulness',
+      'Stress Management',
+      'Emotional Resilience',
+      'Mental Health',
+      'Self-Care',
+    ],
     content: (
       <>
         <p>

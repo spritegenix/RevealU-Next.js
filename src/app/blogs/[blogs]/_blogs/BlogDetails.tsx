@@ -26,6 +26,22 @@ const BlogDetails = () => {
               {blog.content}
             </div>
             <hr className="mt-8 border-gray-300" />
+            {/* Tags Section */}
+            <div className="tags-container md:w-9/12 mx-auto mt-6">
+              <h3 className="text-xl font-semibold mb-3">Tags:</h3>
+              <div className="flex flex-wrap gap-2">
+                {blog.tags.map((tag, tagIndex) => (
+                  <span
+                    key={tagIndex}
+                    className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-lg shadow"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <hr className="mt-8 border-gray-300" />
           </div>
         ))}
       </div>

@@ -36,12 +36,12 @@ export const socialMediaIcons = [
   {
     name: 'Facebook',
     icon: <FaFacebookF size={24} />,
-    link: 'https://www.facebook.com/share/18g5RL1pWz/',
+    link: 'https://www.facebook.com/yogita.sharma3',
   },
   {
     name: 'X (Twitter)',
     icon: <FaInstagram size={24} />,
-    link: 'https://www.instagram.com/dr.yogita_sharma/profilecard/?igsh=MWc0NXU3bzB4ZnMyeA%3D%3D',
+    link: 'https://www.instagram.com/dr.yogita_sharma',
   },
   {
     name: 'LinkedIn',

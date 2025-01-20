@@ -9,14 +9,16 @@ import { LuMail } from 'react-icons/lu';
 
 const AboutSection = () => {
   return (
-    <Wrapper className="py-20 ">
+    <Wrapper className="pt-20 ">
       <div className="flex justify-start flex-col xl:flex-row">
         <div className="flex-1 order-2 h-[800px] xl:order-1 xl:w-10/12">
           <Image
             src={'/images/about-1.jpeg'}
-            width={580}
+            width={200}
             height={650}
             alt="project-discussion"
+            loading="lazy"
+            priority={false}
             className="w-full h-full rounded-lg object-cover"
           />
         </div>
@@ -40,6 +42,8 @@ const AboutSection = () => {
                   src={'/images/group-discussion.jpg'}
                   width={580}
                   height={650}
+                  loading="lazy"
+                  priority={false}
                   alt="group-discussion"
                   className="rounded-lg h-full object-cover aspect-video object-top"
                 />
@@ -99,7 +103,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <CounterSection />
     </Wrapper>
   );
 };
