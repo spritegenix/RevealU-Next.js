@@ -3,6 +3,7 @@ import Layout from '@/components/layout/Layout';
 import React from 'react';
 import { imageSwiperSection } from './data';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const page = () => {
   return (

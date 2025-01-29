@@ -25,7 +25,10 @@ const BlogsCard = () => {
             <div className="space-y-4 ">
               <div className="flex gap-3">
                 {blog.tags.slice(0, 2).map((tag) => (
-                  <div className="bg-black text-white px-4 py-2 gap-x-1 text-sm w-fit rounded-md">
+                  <div
+                    className="bg-black text-white px-4 py-2 gap-x-1 text-sm w-fit rounded-md"
+                    key={tag}
+                  >
                     {tag}{' '}
                   </div>
                 ))}

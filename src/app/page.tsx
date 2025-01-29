@@ -16,6 +16,7 @@ import {
   FaRegSmileBeam,
 } from 'react-icons/fa';
 import CounterSection from '@/components/CounterSection';
+
 export const cardsData = [
   {
     title: 'Personal Growth',
@@ -54,10 +55,12 @@ export const cardsData = [
     icon: <FaRegSmileBeam size={24} />,
   },
 ];
+
 export default function Home() {
   return (
     <Layout headerStyle={2} footerStyle={1}>
       <HeroSection />
+
       <ServiceSection bgColor="bg-bg-blue/20" />
       <AboutSection />
       <Wrapper containerClassName="pb-10">

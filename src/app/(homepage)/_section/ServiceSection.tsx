@@ -3,7 +3,7 @@ import { cardsData } from '@/app/page';
 import ClientSlider from '@/components/ClientSlider';
 import Wrapper from '@/components/elements/Wrappers';
 import HomeCard from '@/components/HomeCard';
-import React from 'react';
+import React, { Suspense } from 'react';
 interface ServiceSectionProps {
   bgColor: string;
 }
@@ -33,14 +33,17 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ bgColor }) => {
         <span className="bg-images font-semibold">2000+</span> individuals and
         companies globally to achieve their goals and unlock new opportunities.
       </p>
-      <ClientSlider
-        data={clients}
-        sliderSpeed={30}
-        reverseDirection={false}
-        innerContainerClass={
-          'w-32 md:w-fit md:h-fit flex-shrink-0 flex items-center justify-center mx-24 md:mx-10'
-        }
-      />
+      <Suspense>
+        {' '}
+        <ClientSlider
+          data={clients}
+          sliderSpeed={30}
+          reverseDirection={false}
+          innerContainerClass={
+            'w-32 md:w-fit md:h-fit flex-shrink-0 flex items-center justify-center mx-24 md:mx-10'
+          }
+        />
+      </Suspense>
     </Wrapper>
   );
 };

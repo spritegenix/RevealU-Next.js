@@ -19,14 +19,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  authModal,
 }: Readonly<{
+  authModal: React.ReactNode;
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body className={`${manrope.className} ${mukta.className} antialiased`}>
+        {authModal ? authModal : 'null'}
         {children}
-        <div id="portal"></div>
+        <div id="modal-portal"></div>
       </body>
     </html>
   );

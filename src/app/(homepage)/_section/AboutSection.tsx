@@ -3,17 +3,17 @@ import Button from '@/components/elements/Button';
 import Wrapper from '@/components/elements/Wrappers';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { memo } from 'react';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { LuMail } from 'react-icons/lu';
 
-const AboutSection = () => {
+const AboutSection = memo(() => {
   return (
     <Wrapper className="pt-20 ">
       <div className="flex justify-start flex-col xl:flex-row">
-        <div className="flex-1 order-2 h-[800px] xl:order-1 xl:w-10/12">
+        <div className="flex-1 order-2 h-[800px]  xl:order-1 xl:w-10/12">
           <Image
-            src={'/images/about-1.jpeg'}
+            src={'/images/about-1.webp'}
             width={200}
             height={650}
             alt="project-discussion"
@@ -105,6 +105,6 @@ const AboutSection = () => {
       </div>
     </Wrapper>
   );
-};
+});
 
 export default AboutSection;
